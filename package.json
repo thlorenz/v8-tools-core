@@ -1,0 +1,22 @@
+{
+    "name" : "v8-tools-core",
+    "version" : "0.0.0",
+    "description" : "Core JavaScript modules supporting v8 tools.",
+    "main" : "v8-tools-core.js",
+    "repository" : {
+      "type" : "git",
+      "url" : "git://github.com/thlorenz/v8-tools-core.git"
+    },
+    "homepage" : "https://github.com/thlorenz/v8-tools-core",
+    "keywords": [] ,
+    "author" : {
+      "name" : "Thorsten Lorenz",
+      "email" : "thlorenz@gmx.de",
+      "url" : "http://thlorenz.com"
+    },
+    "license" : {
+      "type": "MIT",
+      "url": "https://github.com/thlorenz/v8-tools-core/blob/master/LICENSE"
+    },
+    "engine" : { "node" : ">=8" }
+}
