@@ -318,3 +318,8 @@ CodeMap.NameGenerator.prototype.getName = function(name) {
   var count = ++this.knownNames_[name];
   return name + ' {' + count + '}';
 };
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  var SplayTree = require('./splaytree.js')
+  module.exports = CodeMap;
+} 

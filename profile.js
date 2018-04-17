@@ -1122,3 +1122,12 @@ JsonProfile.prototype.writeJson = function() {
 
   write('}\n');
 };
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  var CodeMap = require('./codemap.js')
+  module.exports = {
+    Profile,
+    CallTree,
+    JsonProfile
+  };
+} 

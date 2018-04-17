@@ -100,3 +100,7 @@ class CsvParser {
     return fields
   }
 }
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  module.exports = CsvParser;
+} 

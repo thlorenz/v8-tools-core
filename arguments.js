@@ -76,3 +76,7 @@ function parseBool(str) {
   if (str == "true" || str == "1") return true;
   return false;
 }
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  module.exports = { BaseArgumentsProcessor, parseBool }
+} 

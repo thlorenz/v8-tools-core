@@ -233,3 +233,8 @@ LogReader.prototype.processLog_ = function(lines) {
     }
   }
 };
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  var CsvParser = require('./csvparser.js')
+  module.exports = LogReader;
+} 

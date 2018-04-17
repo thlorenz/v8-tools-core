@@ -90,3 +90,7 @@ ConsArray.Cell = function(data, next) {
   this.data = data;
   this.next = next;
 };
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  module.exports = ConsArray;
+} 

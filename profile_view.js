@@ -199,3 +199,8 @@ ProfileView.Node.prototype.sortChildren = function(
     sortFunc) {
   this.children.sort(sortFunc);
 };
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  var ConsArray = require('./consarray.js')
+  module.exports = { ProfileView, ViewBuilder };
+} 

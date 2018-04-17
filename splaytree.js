@@ -325,3 +325,7 @@ SplayTree.Node.prototype.left = null;
  * @type {SplayTree.Node}
  */
 SplayTree.Node.prototype.right = null;
+
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  module.exports = SplayTree;
+} 
