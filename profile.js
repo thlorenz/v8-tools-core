@@ -25,6 +25,14 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  var CodeMap = require('./codemap.js')
+  module.exports = {
+    Profile,
+    CallTree,
+    JsonProfile
+  };
+} 
 
 /**
  * Creates a profile object for processing profiling-related events
@@ -1122,12 +1130,3 @@ JsonProfile.prototype.writeJson = function() {
 
   write('}\n');
 };
-
-if (typeof module === 'object' && typeof module.exports === 'object') {
-  var CodeMap = require('./codemap.js')
-  module.exports = {
-    Profile,
-    CallTree,
-    JsonProfile
-  };
-} 
