@@ -1,6 +1,6 @@
 {
   "name": "v8-tools-core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core JavaScript modules supporting v8 tools.",
   "main": "v8-tools-core.js",
   "repository": {
