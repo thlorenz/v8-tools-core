@@ -248,5 +248,5 @@ LogReader.prototype.processLogLine_ = function(line) {
 
 if (typeof module === 'object' && typeof module.exports === 'object') {
   var CsvParser = require('./csvparser.js')
-  module.exports = LogReader;
+  module.exports = { LogReader, parseString, parseVarArgs }
 } 
