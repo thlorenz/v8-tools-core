@@ -27,6 +27,7 @@
 
 if (typeof module === 'object' && typeof module.exports === 'object') {
   var CodeMap = require('./codemap.js')
+  var ConsArray = require('./consarray.js')
   module.exports = {
     Profile,
     CallTree,
